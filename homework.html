@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Opening Form</title>
+  </head>
+  <body>
+    <main id="account-form">
+      <section id="account-opening-form">
+        <h2>Open Account</h2>
+        <p>
+          Please fill out this form to register yourself for account opening
+          queue.
+        </p>
+        <form action="/" method="post">
+            <fieldset>
+            <legend>Personal Information</legend>
+          <div>
+              <label for="full-name">Full Name : </label>
+              <input
+                type="text"
+                id="full-name"
+                placeholder="Enter Full Name"
+                name="full_name"
+                required
+              />
+          </div>
+          <br>
+          <div>
+              <label for="email-user">Email : </label>
+              <input
+                type="email"
+                placeholder="Enter Email"
+                id="email-user"
+                name="email_user"
+                required
+              />
+          </div>
+          <br>
+          <div>
+              <label for="mobile-number">Enter Mobile Number : </label>
+              <input
+                type="tel"
+                id="mobile-number"
+                placeholder="Enter Valid Number"
+                value="+91"
+                minlength="10"
+                maxlength="15"
+                name="mobile_user"
+                pattern="\+\d{1,3}\d{6,14}"
+                required
+              />
+          </div>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Account Security</legend>
+          <div>
+              <label for="password-user">Create Password : </label>
+              <input
+                type="password"
+                id="password-user"
+                required
+                minlength="8"
+                maxlength="12"
+                name="password_user"
+              />
+          </div>
+          </fieldset>
+          <br>
+          <div>
+              <input type="checkbox" id="agree-terms" required />
+              <label for="agree-terms"
+                >After filling the required details correctly please sign the
+                checkbox to proceed further</label
+              >
+          </div>
+          <br>
+          <div>
+              <button type="reset">Reset Details</button>
+              <button type="submit">Submit Details</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
